@@ -1,0 +1,1229 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;800;1000&family=Rakkas&display=swap');
+
+* {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+.html {
+    font-size: 50;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+
+#home_logo {
+    width: 45%;
+    height: auto;
+    margin-bottom: 0%;
+    pointer-events: none;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.container {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0e0e0e;
+}
+
+#home {
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-color: #0e0e0e;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-content: center;
+}
+
+#ready {
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    color: whitesmoke;
+    background-color: rgb(133, 5, 5);
+    font-size: 150%;
+    padding: 1% 2%;
+    margin: 2%;
+    box-shadow:10px 5px 50px 20px black;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+#learn {
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    color: whitesmoke;
+    background-color: rgb(34, 34, 34);
+    font-size: 150%;
+    padding: 1% 2%;
+    margin: 2%;
+    box-shadow:10px 5px 50px 20px black;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+#ready:hover{
+    background-color: rgb(54, 4, 4);
+}
+
+#learn:hover{
+    background-color: rgb(11, 11, 11);
+}
+
+#join_us {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transform: translateY(-10px);
+}
+
+#join_us a {
+    margin-bottom: auto;
+    text-decoration: none;
+    color: rgb(202, 21, 21);
+}
+
+#about {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-image: url('../img/about_bg.png');
+    background-size: cover;
+    
+}
+
+#about img {
+    display: flex;
+    height: 100%;
+    justify-self: left;
+}
+
+#about_right{
+    margin-right: 5%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: right;
+}
+
+#about_logo {
+    margin-bottom: 50px ;
+    margin-top: 15%;
+}
+
+#about_right p {
+    display: inline;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    line-height: 220%;
+    word-break: break-all;
+    color: white;
+    text-align: right;
+    font-weight: 800;
+    font-size: 170%;
+}
+
+
+.error {
+    color: rgb(202, 41, 41);
+    font-size: 0.7rem;
+}
+
+p {
+    font-size: 0.7rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+
+/*Join Page*/
+
+#join_body {
+    background-image: url('../img/apply_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width:  13rem;
+    border: none;
+    border-radius: 15px;
+    height: 2.3rem;
+    background-color: rgba(0, 0, 0, 7%);
+    text-align: center;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+textarea {
+    width: 40rem;
+    height: 4rem;
+    resize: none;
+    justify-self: end !important;
+    text-align: right;
+    direction: rtl;
+}
+
+
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid_container {
+    display: grid;
+    background-color: white;
+    border-radius: 40px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.apply {
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-areas: 
+    
+
+    "join_logo join_logo join_logo join_logo"
+    "img img un dp"
+    "img img pw em"
+    "img img ar pn"
+    "wpn wpn cr cr"
+    "sbmt sbmt sbmt sbmt"
+    
+    ;
+    min-width: 70%;
+}
+
+.login {
+
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.5);
+    height: 80%;
+    width: 450px;
+    gap: 25px;
+    grid-template-areas: 
+    
+
+    "join_logo"
+    "un"
+    "pw"
+    "sbmt"
+    "rg"
+    
+    ;
+}
+
+.field {
+    text-align: right;
+}
+
+
+.dp {
+    grid-area: dp;
+}
+
+.un {
+    grid-area: un;
+}
+
+.em {
+    grid-area: em;
+}
+
+.pw {
+    grid-area: pw;
+}
+
+.pn {
+    grid-area: pn;
+}
+
+.ar {
+    grid-area: ar;
+}
+
+.cr {
+    grid-area: cr;
+}
+
+.dt {
+    grid-area: dt;
+}
+
+.tm {
+    grid-area: tm;
+    direction: ltr;
+}
+
+.upload_img_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: img;
+}
+
+.register {
+    grid-area: rg;
+}
+
+.dtls {
+    grid-area: dtls;
+}
+
+.fight_logo {
+    grid-area: fight_logo;
+}
+
+.join_logo {
+    grid-area: join_logo;
+    color: rgb(187, 17, 17);
+    margin-bottom: 2%;
+}
+
+h1 {
+    font-family: 'Rakkas', cursive;
+    font-size: 4rem;
+    font-weight: 500;
+    color: rgb(187, 17, 17);
+}
+
+.wpn {
+    grid-area: wpn;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: right;
+    direction: rtl;
+    grid-gap: 20px;
+
+}
+
+.wpn label {
+    grid-column: 1/3;
+}
+
+.wpn div label {
+    color: #1a1a1a !important;
+    font-size: 0.9rem !important;
+}
+
+#submit_app {
+    grid-area: sbmt;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: rgb(187, 17, 17);
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    transition: all 0.7s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+#submit_app:hover{
+    background-color: rgb(162, 14, 14);
+    transform: scale(0.97);
+}
+
+.upload {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    aspect-ratio: 3/4;
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    overflow: hidden;
+    background-image: url('../img/nopfp.png');
+    background-size: cover;
+    background-position: center;
+    border: #1a1a1a solid 5px;
+}
+
+.upload label {
+    position: absolute;
+    color: white !important;
+    opacity: 0;
+    transition: all 0.7s;
+    font-weight: bold;
+    font-size: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.upload:hover label {
+    opacity: 100;
+}
+
+.upload input[type="file"]{
+    transform: scale(50);
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+
+}
+
+input[type=file]::-webkit-file-upload-button {
+    cursor: pointer; 
+}
+
+input[type='radio'] {
+    accent-color: #1a1a1a;
+}
+
+
+header {
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    z-index: 100;
+    width: 100%;
+    direction: rtl;
+    left:0;
+    right: 0;
+    position: fixed;    
+    margin: 1%;
+}
+
+.left_nav li a img {
+    width: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+  }
+  
+li {
+    margin:0px;
+    box-sizing: border-box;
+    display: contents;
+  }
+  
+li a {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all .3s;
+  }
+  
+li a:hover {
+    color: rgb(202, 21, 21);
+  }
+
+  .field label {
+    font-weight: bold;
+    color: rgb(187, 17, 17);
+    font-size: 1rem;
+  }
+
+
+
+  .fight {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    direction: rtl;
+    min-height: 80%;
+    height: auto;
+    width: 80%;
+    gap: 50px;
+    grid-template-areas: 
+    
+
+    ". fight_logo fight_logo ."
+    ". dp pn ."
+    ". ar em ."
+    ". dt tm ."
+    ". dtls dtls ."
+    ". div div ."
+    "choose choose choose choose"
+    "fighters fighters fighters fighters"
+    "sbmt sbmt sbmt sbmt"
+    
+
+    
+    ;
+
+    margin-top: 4%;
+
+    background-color: #202020;
+}
+
+.fight label {
+    color: rgb(234, 234, 234);
+}
+
+.fight .field input, .fight textarea {
+    background-color: rgba(255,255,255,2%);
+    color: white;
+}
+
+
+input[type="date"], input[type="time"] {
+    border: none;
+    outline: none;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #212121;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {
+
+    background-color: white;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.divide {
+    grid-area: div;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(116, 116, 116);
+}
+
+#order {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: start;
+    align-items: start;
+}
+
+/* Man Card */
+
+.choose {
+    grid-area: choose;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fighters {
+    grid-area: fighters;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    aspect-ratio: 1/2;
+    background-color: rgb(187, 17, 17);
+    color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    margin: 2%;
+
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+.card h1 {
+    color: white;
+    font-size: 3rem;
+}
+.card_img {
+    position: relative;
+    height: 50%;
+    aspect-ratio: 1/1;
+}
+.imgsrc {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.imgsrc img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.card_name {
+    width: 100%;
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+    /* z-index: 2; */
+    /* transform: translateY(230%) */
+}
+
+.desc {
+    font-family: 'Cairo', sans-serif;
+    font-weight: lighter;
+    margin: 3%;
+    margin-top: 10%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: rgba(255,255,255,60%);
+    min-height: 4.5rem;
+    
+}
+
+.card_wpn {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.card_wpn h2 {
+    color: #000000;
+}
+
+.price {
+    text-align: center;
+    line-height: 3rem;
+    margin: 0;
+    justify-self: end;
+}
+
+.price h1 {
+    margin: 0;
+}
+
+
+
+input[type="checkbox"] {
+    top: 0;
+    transform: scale(500);
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+.fa-check-circle{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+
+}
+.select:checked ~ .fa-check-circle{
+    color: rgb(0, 255, 0);
+    opacity: 100%;
+}
+
+.tick {
+    display: flex;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.tick .fa {
+    font-size: 4rem;
+}
+
+
+.card:hover .tick {
+    backdrop-filter: grayscale(100%) brightness(40%) blur(5px);
+}
+
+.card:hover .fa-check-circle {
+    opacity: 100%;
+}
+
+
+
+/* admin */
+
+.admin_login {
+
+    background-color: rgb(187, 17, 17);
+    height: 80%;
+    width: 30%;
+    gap: 50px;
+    grid-template-areas: 
+    
+
+    "join_logo"
+    "un"
+    "pw"
+    "sbmt"    
+    ;
+}
+
+.admin_login h1, .admin_login input, .admin_login label {
+    color: #e0e0e0;
+    margin: 3%;
+}
+
+.admin_login #submit_app {
+    background-color: #212121;
+}
+
+.admin_login #submit_app:hover {
+    background-color: #000000;
+}
+
+
+.admin_login .error {
+    color: #0e0e0e;
+}
+
+.menu {
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10%;
+    border-radius: 20px;
+    font-size: 2rem;
+    margin: 2%;
+    background-color: rgb(187, 17, 17);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease-in-out;
+
+}
+
+.menu a:hover {
+    background-color: rgb(161, 14, 14);
+    transform: scale(0.97);
+}
+
+
+/* Admin Fighters */
+
+.form-admin-fighters {
+    display: flex;
+    justify-content: center;
+}
+
+.list-fighters{
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: start;
+    align-items: center;
+    align-content: start;
+}
+
+.admin-fighters {
+    width: 1000px;
+    margin: 1%;
+    background-color: rgb(202, 21, 21);
+    align-items: start;
+    gap: 1%;
+    grid-template-columns: 1fr 0.5fr 0.5fr ;
+    direction: rtl; 
+    overflow: hidden;
+    grid-template-areas: 
+    "id id id"
+    "pfp dp em"
+    "pfp pn ar"
+    "un wpn wpn"
+    "cr cr cr"
+    "pr pr pr"
+    "btn btn btn"
+    ;
+}
+
+.admin-fighters h3, .admin-fighters p, .admin-fighters h1 {
+    color: white;
+    font-size: 1rem;
+}
+
+.admin-fighters h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+.admin-fighters p {
+    font-size: 1rem;
+}
+
+.fighter-id {
+    grid-area: id;
+}
+
+.fighter-picture {
+    grid-area: pfp;
+    height: 200px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    border: solid #0e0e0e;
+}
+
+.fighter-picture img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.fighter-name {
+    grid-area: dp;
+    justify-self: start;
+}
+
+.fighter-username {
+    grid-area: un;
+}
+
+.fighter-phone {
+    grid-area: pn;
+    justify-self: start;
+}
+
+.fighter-email {
+    grid-area: em;
+    justify-self: start;
+}
+
+.fighter-address {
+    grid-area: ar;
+    justify-self: start;
+    margin-left: 10%;
+    word-wrap: wrap;
+}
+
+.fighter-crecord {
+    justify-self: center;
+    grid-area: cr;
+    margin-left: 10%;
+    margin-right: 10%;
+    word-wrap: wrap;
+}
+
+.fighter-price {
+    grid-area: pr;
+}
+
+.fighter-weapon {
+    grid-area: wpn;
+    justify-self: start;
+}
+
+.buttons {
+    grid-area: btn;
+}
+
+.buttons button {
+    margin: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.buttons .fa-solid {
+    width: 100%;
+    font-size: 3rem;
+    transition: all 0.5s ease-in-out;
+    color: #0e0e0e;
+}
+
+.buttons .fa-square-check {
+    color: rgb(56, 172, 56);
+}
+
+.buttons .fa-solid:hover {
+    filter: brightness(90%);
+    transform: scale(0.97);
+}
+
+
+/* Admin Fights List */
+
+.list-fights {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+
+.fight-card {
+    gap: 30px;
+    width: 1300px;
+    color: #e0e0e0;
+    background-color: #212121;
+    direction: rtl;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
+    grid-template-areas: 
+    
+    ". fid fid fid ."
+    ". fcn fce fcp ."
+    ". fa fa fdt ."
+    ". fd fd fd ."
+    ". flf flf flf ."
+    ". btn btn btn ."
+    
+    ;
+
+    margin-top: 50px;
+}
+
+.fight-id { grid-area: fid; }
+
+.fight-client-name { grid-area: fcn; justify-self: start;}
+
+.fight-client-email { grid-area: fce; justify-self: start;}
+
+.fight-client-phone { grid-area: fcp; justify-self: start;}
+
+.fight-address { grid-area: fa; justify-self: start;}
+.fight-address p {
+    word-wrap: wrap;
+ }
+
+.fight-details { grid-area: fd; }
+.fight-details p {
+    word-wrap: wrap;
+}
+
+.fight-date-time { grid-area: fdt; justify-self: start;}
+
+.fight-list-fighters {
+    width: 100%;
+    justify-content: center;
+    grid-area: flf;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fight-fighter {
+    margin: 1%;
+    width: 200px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 21, 21);
+}
+
+.fight-fighter > * {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fight-card .fa-square-xmark {
+    color: rgb(235, 8, 8);
+}
+
+
+/* Profile Page */
+
+.profile-page {
+    justify-items: start;
+    gap: 0 !important;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    display: grid;
+    direction: rtl;
+    width: 100%;
+    grid-template-areas: 
+    
+    "ui lf"
+    ;
+}
+
+.user-info {
+    grid-area: ui;
+    background-color: rgb(202, 21, 21);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    height: 90vh;
+    border-radius: 25px;
+}
+
+.profile-picture {
+    margin-top: 20px;
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid #212121;
+    box-shadow: 0 2px 0 2px black;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-info h1, .user-info h2 {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.settings {
+    direction: rtl;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: end;
+    justify-content: center;
+}
+
+.settings a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 20%);
+}
+
+.profile-page .user-info h3 {
+    direction: ltr;
+    color: rgba(0, 0, 0, 50%);
+    transform: translateY(-30px);
+}
+
+.profile-page .list-fights {
+    width: 1000px;
+    grid-area: lf; 
+}
+
+.profile-page .fight-card {
+    width: 100%;
+    grid-template-areas: 
+    ". fid fid fid ."
+    ". fcn fce fcp ."
+    ". fa fa fdt ."
+    ". fd fd fd ."
+    ". prt prt prt ."
+    ". flf flf flf ."
+    ;
+}
+
+.participants {
+    grid-area: prt;
+}
+
+
+
+/* Success Pages */
+
+.thanks-page {
+    direction: rtl;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+.thanks-page h1, .thanks-page .fa-circle-check {
+    font-size: 7rem;
+    color: rgb(56, 172, 56);
+}
+
+.thanks-page p {
+    text-align: center;
+    margin: 25px;
+    font-size: 1rem;
+    color: white;
+    word-wrap: wrap;
+}
+
+.thanks-page .thanks-paragraph {
+    width: 600px;
+}
+
+.return {
+    width: 500px;
+    text-align: center;
+}
+
+.return #submit_app:hover {
+    background-color: rgb(162, 14, 14);
+}
+.return #submit_app i {
+    transition: all 0.7 ease-in-out;
+}
+.return #submit_app:hover i {
+    margin-right: 10px;
+}
+
+
+.error-page h1, .error-page .fa-circle-xmark{
+    font-size: 7rem;
+    color: rgb(202, 21, 21) !important;
+}
+
+.thanks-page img {
+    width: 600px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.social-media a {
+    color: rgba(255,255,255,20%);
+    transition: all 0.2s ease-in-out;
+    margin: 10px;
+}
+
+.social-media a:hover {
+    color: rgba(255,255,255,60%);
+}
+
+/* New Homepage */
+
+.home-page {
+    direction: rtl;
+    width: 95%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+}
+
+.home-page h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.home-page #submit_app:hover {
+    background-color: rgb(162, 14, 14);
+    transform: scale(0.97);
+}
+
+.home-paragraph {
+    width: 700px;
+}
+
+.home-page p {
+    font-size: 0.8rem;
+    word-wrap: wrap;
+    color: white;
+}
+
+
+
+.login-left {
+    grid-area: lgnl;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../img/login_full.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.login-right {
+    grid-area: lgnr;
+}
+
+#login {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-areas: 
+    "lgnl lgnr"
+    ;
+}
+
+.home-page a[href="about.php"] {
+    text-decoration: none;
+    color: white;
+    font-size: 0.5rem;
+}
+
